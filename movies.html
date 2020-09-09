@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////                      //////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////        NAVBAR        //////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////                      //////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-nav" data-aos="fade-down">
+      <div class="navbar-header">
+        <img src="images/logo.png" height="30px;">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Calculator<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="converter.html">Converter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="editor.html">Editor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="code.html">Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bing.html">Bing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wallpaper.html">Wallpapers</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="movies.html">Movies</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////                                  //////////////////////////////////////////// -->
+<!-- /////////////////////////////        DYNAMIC MOVIE CARDS       //////////////////////////////////////////// -->
+<!-- /////////////////////////////                                  //////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--  -->
+
+    <div class="films">
+      <div class="container">
+        <div id="film-items" class="row">
+
+        </div>
+      </div>
+    </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////                   /////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////       MODAL       ////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////                   ////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!--  -->
+
+    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content hvr-underline-from-center">
+          <div class="container-fluid">
+            <div class="row modal-row">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <img id="modal-image" class="img-fluid" src="" alt="">
+                <p id="modal-year"></p>
+                <p id="modal-genre"></p>
+                <p id="modal-actors"></p>
+                <p id="modal-director"></p>
+                <div align="center"><a id="modal-download" class="download hvr-grow" href="">Download</a></div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <p id="modal-title"></p>
+                <p id="modal-plot"></p>
+                <p id="modal-rating"></p>
+                <p id="trailer-heading">Trailer :</p>
+                <video width="100%" controls  id="modal-trailer">
+                  <source src="" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////                      //////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////       SCRIPTS        //////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////                      //////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="./js/movies.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+
+  </body>
+</html>
